@@ -7,15 +7,17 @@ public class Usuario {
 	private String Email;
 	private String DNI;
 	private String FechaNacimiento;
+	private int Edad;
 	
 	
-	public Usuario(String nombre, String apellidos, String email, String dNI, String fechaNacimiento) {
+	public Usuario(String nombre, String apellidos, String email, String dNI, String fechaNacimiento, int edad) {
 		super();
 		Nombre = nombre;
 		Apellidos = apellidos;
 		Email = email;
 		DNI = dNI;
 		FechaNacimiento = fechaNacimiento;
+		Edad = edad;
 	}
 	
 	
@@ -49,6 +51,14 @@ public class Usuario {
 	public void setFechaNacimiento(String fechaNacimiento) {
 		FechaNacimiento = fechaNacimiento;
 	}
+	public int getEdad() {
+		return Edad;
+	}
+	public void setEdad(int edad) {
+		Edad = edad;
+	}
 	
-	
+	public boolean isAdult() {
+		return Edad >= 18;
+	}
 }

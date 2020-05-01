@@ -2,7 +2,7 @@ package ufv.dis.parcialfinal.RSRS;
 
 import java.util.ArrayList;
 
-import ufv.dis.parcialfinal.RSRS.*;;
+import ufv.dis.parcialfinal.RSRS.*;
 
 public class Lista {
 
